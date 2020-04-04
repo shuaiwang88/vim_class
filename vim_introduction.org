@@ -1,0 +1,67 @@
+#+TITLE: Introduction of VIM 
+#+AUTHOR: Shuai Wang 
+#+DATE:  04/04/2020
+#+EMAIL: wang.172@wright.edu
+#+SETUPFILE:  https://fniessen.github.io/org-html-themes/setup/theme-bigblow.setup
+
+
+Normal mode:
+* Movement 
+copy the text to your vim enabled editor.
+
+#+NAME: example-table
+#+RESULTS:
+#+BEGIN_src python
+
+apple orange red gree hi big small
+
+demand_df = pd.DataFrame(data=np.random.random(size=(n_hours, n_bus)),
+                         columns=np.arange(1, n_bus + 1),
+                         index=np.arange(1, n_hours + 1))
+data = {
+    ('seattle',  'new-york') : 2.5,
+    ('seattle',  'chicago')  : 1.7,
+    ('seattle',  'topeka')   : 1.8,
+    ('san-diego','new-york') : 2.5,
+    ('san-diego','chicago')  : 1.8,
+    ('san-diego','topeka')   : 1.4}
+#+END_src
+
+** Direction move 
+1. right: h
+2. left:  l
+3. up:    k
+4. down:  j
+
+* By word move
+1. w: foward by a word  
+2. b: back by a word
+3. e: to the end of the next word
+
+** Line Navigation: exetreme point
+1. 0:  beginning of the line
+2. $:  end of the line
+3. gg: 1st line of the file
+4. G:  last line of the file
+5. 3gg/3G: go to line 3 in the document
+
+** Turbo pack: Go to the next character, word, and line
+1. 4l: go the 4th character to the left
+2. 4j: to the 4th line to the bottom
+3. 3w: go to the 3rd word after the current word
+4. 2b: go back to the 2nd word before the current word
+
+** Ultimate movement: use find f/F and /
+*** in-line 
+1. fc/Fc: find the next/previous letter c in the current line.
+Not the c you want?
+Repeat the procecure by using ;
+
+*** global search 
+1. /san find the next word san in the document
+Not the san you want?
+Go to the next one by using n and the last one using N
+
+
+
+
