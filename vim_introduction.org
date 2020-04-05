@@ -5,7 +5,14 @@
 #+SETUPFILE:  https://fniessen.github.io/org-html-themes/setup/theme-bigblow.setup
 
 
-Normal mode:
+* File operations
+** write/save file: :w
+** quit/close: 
+1. q!:     quit without save
+2. wq:     write and save. Also zz
+3. u:      undo
+4. ctrl+r: redo
+
 * Movement 
 copy the text to your vim enabled editor.
 
@@ -93,7 +100,44 @@ Install the vimum extension
 [[https://github.com/televator-apps/vimari][Safari]]
 
 
+* Insert text
+
+Insert mode: you start to type character.
+Key ESC is used to change between normal mode and insert mode
+** Insert in next/above line
+1. o: insert in the next line
+2. O: insert above the current line
+** Backward insert
+1. i: insert before the current character
+2. I: insert from the start of the line
+
+** Forward insert
+1. a: append to the right of the current character
+2. A: append to the end of line
+
+** repeat typing
+1. try 80i# and press escape
+
+** replace text
+1. r: replace a character in normal mode
 
 
+* Visual mode
+Select text in highlight mode and operate
+
+1. v + movement. eg. vl, vw
+2. V: highlight a line. 
+3. Ctrl + v: highlight a block. Ctrl+v+Shift+i+#
+
+* Substitue 
+1. :s/a/b/g  substitute a with b, in a line
+2. :%s/a/b/g substitute a with b, in whole document
+3. use visulal mode to select block to substitute.
+4. :5,12s/a/b/g
+
+* Tricks
+1. Ctrl + j: append next line to the end of current line.
+2. Ctrl +a/x: +/- number
+3. ~: change alphabet cases 
 
 
