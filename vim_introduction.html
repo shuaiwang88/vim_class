@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-04-04 Sat 20:59 -->
+<!-- 2020-04-04 Sat 21:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Introduction of VIM</title>
@@ -258,58 +258,58 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org38023c7">1. File operations</a>
+<li><a href="#org2cda063">1. File operations</a>
 <ul>
-<li><a href="#org31a4bed">1.1. write/save file: :w</a></li>
-<li><a href="#org263ca58">1.2. quit/close:</a></li>
+<li><a href="#org0804f4e">1.1. write/save file: :w</a></li>
+<li><a href="#orgb49885f">1.2. quit/close:</a></li>
 </ul>
 </li>
-<li><a href="#orgb5b02c5">2. Movement</a>
+<li><a href="#org0fda7f7">2. Movement</a>
 <ul>
-<li><a href="#org2b2ff49">2.1. Direction move</a></li>
-<li><a href="#orged0f866">2.2. By word move</a></li>
-<li><a href="#org5df06af">2.3. Line Navigation: exetreme point</a></li>
-<li><a href="#org7c07ab2">2.4. Turbo pack: Go to the next character, word, and line</a></li>
-<li><a href="#orgd32265b">2.5. Ultimate movement: use find f/F and search /</a>
+<li><a href="#org802a525">2.1. Direction move</a></li>
+<li><a href="#orgc72b46f">2.2. By word move</a></li>
+<li><a href="#org5c73942">2.3. Line Navigation: extreme point</a></li>
+<li><a href="#org68bee30">2.4. Turbo pack: Go to the next character, word, and line</a></li>
+<li><a href="#org309b816">2.5. Ultimate movement: use find f/F and search /</a>
 <ul>
-<li><a href="#org9a11a73">2.5.1. in-line</a></li>
-<li><a href="#orgc0f1657">2.5.2. global search</a></li>
+<li><a href="#org82114b2">2.5.1. in-line</a></li>
+<li><a href="#orgee1f0c8">2.5.2. global search</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orga8fdf7c">3. Cut, copy and paste</a>
+<li><a href="#org455ac48">3. Cut, copy and paste</a>
 <ul>
-<li><a href="#orge37d54d">3.1. delete character, word, and line</a></li>
-<li><a href="#orged38f4a">3.2. Reddit time</a></li>
+<li><a href="#orga1515cd">3.1. delete character, word, and line</a></li>
+<li><a href="#org8ead480">3.2. Reddit time</a></li>
 </ul>
 </li>
-<li><a href="#orgb57f220">4. Insert text</a>
+<li><a href="#orgedd9456">4. Insert text</a>
 <ul>
-<li><a href="#orgd56a241">4.1. Insert in next/above line</a></li>
-<li><a href="#org61d28a6">4.2. Backward insert</a></li>
-<li><a href="#orgfaefbeb">4.3. Forward insert</a></li>
-<li><a href="#orgf08dcb4">4.4. repeat typing</a></li>
-<li><a href="#org97739cd">4.5. replace text</a></li>
+<li><a href="#org0597848">4.1. Insert in next/above line</a></li>
+<li><a href="#org018480f">4.2. Backward insert</a></li>
+<li><a href="#org5af146b">4.3. Forward insert</a></li>
+<li><a href="#orgd373f61">4.4. repeat typing</a></li>
+<li><a href="#org06c9f1e">4.5. replace text</a></li>
 </ul>
 </li>
-<li><a href="#org2036aa2">5. Visual mode</a></li>
-<li><a href="#orgd7adadc">6. Substitue</a></li>
-<li><a href="#orgf3b67d7">7. Tricks</a></li>
+<li><a href="#org63e3628">5. Visual mode</a></li>
+<li><a href="#org4bc7eb5">6. Substitute</a></li>
+<li><a href="#org531e53e">7. Tricks</a></li>
 </ul>
 </div>
 </div>
 
 
-<div id="outline-container-org38023c7" class="outline-2">
-<h2 id="org38023c7"><span class="section-number-2">1</span> File operations</h2>
+<div id="outline-container-org2cda063" class="outline-2">
+<h2 id="org2cda063"><span class="section-number-2">1</span> File operations</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org31a4bed" class="outline-3">
-<h3 id="org31a4bed"><span class="section-number-3">1.1</span> write/save file: :w</h3>
+<div id="outline-container-org0804f4e" class="outline-3">
+<h3 id="org0804f4e"><span class="section-number-3">1.1</span> write/save file: :w</h3>
 </div>
-<div id="outline-container-org263ca58" class="outline-3">
-<h3 id="org263ca58"><span class="section-number-3">1.2</span> quit/close:</h3>
+<div id="outline-container-orgb49885f" class="outline-3">
+<h3 id="orgb49885f"><span class="section-number-3">1.2</span> quit/close:</h3>
 <div class="outline-text-3" id="text-1-2">
 <ol class="org-ol">
 <li>q!:     quit without save</li>
@@ -321,15 +321,15 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgb5b02c5" class="outline-2">
-<h2 id="orgb5b02c5"><span class="section-number-2">2</span> Movement</h2>
+<div id="outline-container-org0fda7f7" class="outline-2">
+<h2 id="org0fda7f7"><span class="section-number-2">2</span> Movement</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 copy the text to your vim enabled editor.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-python" id="org3a07cd8">apple orange red gree hi big small
+<pre class="src src-python" id="org2aad5da">apple orange red gree hi big small
 
 <span style="color: #8787d7;">demand_df</span> = pd.DataFrame<span style="color: #268bd2;">(</span>data=np.random.random<span style="color: #d75fd7;">(</span>size=<span style="color: #2aa198;">(</span>n_hours, n_bus<span style="color: #2aa198;">)</span><span style="color: #d75fd7;">)</span>,
                          columns=np.arange<span style="color: #d75fd7;">(</span><span style="color: #d75fd7;">1</span>, n_bus + <span style="color: #d75fd7;">1</span><span style="color: #d75fd7;">)</span>,
@@ -346,8 +346,8 @@ copy the text to your vim enabled editor.
 </div>
 </div>
 
-<div id="outline-container-org2b2ff49" class="outline-3">
-<h3 id="org2b2ff49"><span class="section-number-3">2.1</span> Direction move</h3>
+<div id="outline-container-org802a525" class="outline-3">
+<h3 id="org802a525"><span class="section-number-3">2.1</span> Direction move</h3>
 <div class="outline-text-3" id="text-2-1">
 <ol class="org-ol">
 <li>right: h</li>
@@ -358,19 +358,19 @@ copy the text to your vim enabled editor.
 </div>
 </div>
 
-<div id="outline-container-orged0f866" class="outline-3">
-<h3 id="orged0f866"><span class="section-number-3">2.2</span> By word move</h3>
+<div id="outline-container-orgc72b46f" class="outline-3">
+<h3 id="orgc72b46f"><span class="section-number-3">2.2</span> By word move</h3>
 <div class="outline-text-3" id="text-2-2">
 <ol class="org-ol">
-<li>w: foward by a word</li>
+<li>w: forward by a word</li>
 <li>b: back by a word</li>
 <li>e: to the end of the next word</li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-org5df06af" class="outline-3">
-<h3 id="org5df06af"><span class="section-number-3">2.3</span> Line Navigation: exetreme point</h3>
+<div id="outline-container-org5c73942" class="outline-3">
+<h3 id="org5c73942"><span class="section-number-3">2.3</span> Line Navigation: extreme point</h3>
 <div class="outline-text-3" id="text-2-3">
 <ol class="org-ol">
 <li>0:  beginning of the line</li>
@@ -382,8 +382,8 @@ copy the text to your vim enabled editor.
 </div>
 </div>
 
-<div id="outline-container-org7c07ab2" class="outline-3">
-<h3 id="org7c07ab2"><span class="section-number-3">2.4</span> Turbo pack: Go to the next character, word, and line</h3>
+<div id="outline-container-org68bee30" class="outline-3">
+<h3 id="org68bee30"><span class="section-number-3">2.4</span> Turbo pack: Go to the next character, word, and line</h3>
 <div class="outline-text-3" id="text-2-4">
 <ol class="org-ol">
 <li>4l: go the 4th character to the left</li>
@@ -394,25 +394,25 @@ copy the text to your vim enabled editor.
 </div>
 </div>
 
-<div id="outline-container-orgd32265b" class="outline-3">
-<h3 id="orgd32265b"><span class="section-number-3">2.5</span> Ultimate movement: use find f/F and search /</h3>
+<div id="outline-container-org309b816" class="outline-3">
+<h3 id="org309b816"><span class="section-number-3">2.5</span> Ultimate movement: use find f/F and search /</h3>
 <div class="outline-text-3" id="text-2-5">
 </div>
-<div id="outline-container-org9a11a73" class="outline-4">
-<h4 id="org9a11a73"><span class="section-number-4">2.5.1</span> in-line</h4>
+<div id="outline-container-org82114b2" class="outline-4">
+<h4 id="org82114b2"><span class="section-number-4">2.5.1</span> in-line</h4>
 <div class="outline-text-4" id="text-2-5-1">
 <ol class="org-ol">
 <li>fc/Fc: find the next/previous letter c in the current line.</li>
 </ol>
 <p>
 Not the c you want?
-Repeat the procecure by using ;
+Repeat the procedure by using ;
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgc0f1657" class="outline-4">
-<h4 id="orgc0f1657"><span class="section-number-4">2.5.2</span> global search</h4>
+<div id="outline-container-orgee1f0c8" class="outline-4">
+<h4 id="orgee1f0c8"><span class="section-number-4">2.5.2</span> global search</h4>
 <div class="outline-text-4" id="text-2-5-2">
 <ol class="org-ol">
 <li>/san find the next word san in the document</li>
@@ -426,19 +426,19 @@ Go to the next/previous one by hitting enter followed by n or N
 </div>
 </div>
 
-<div id="outline-container-orga8fdf7c" class="outline-2">
-<h2 id="orga8fdf7c"><span class="section-number-2">3</span> Cut, copy and paste</h2>
+<div id="outline-container-org455ac48" class="outline-2">
+<h2 id="org455ac48"><span class="section-number-2">3</span> Cut, copy and paste</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Most of operations can use Verb + Noun:
 </p>
 <ul class="org-ul">
 <li>d for delete, w for word, combine to be "delete word"</li>
-<li>numer n can be added in front of the perations: 3dw.</li>
+<li>number n can be added in front of the operations: 3dw.</li>
 </ul>
 </div>
-<div id="outline-container-orge37d54d" class="outline-3">
-<h3 id="orge37d54d"><span class="section-number-3">3.1</span> delete character, word, and line</h3>
+<div id="outline-container-orga1515cd" class="outline-3">
+<h3 id="orga1515cd"><span class="section-number-3">3.1</span> delete character, word, and line</h3>
 <div class="outline-text-3" id="text-3-1">
 <ol class="org-ol">
 <li>x: delete a character. 3x, 100x</li>
@@ -462,7 +462,7 @@ Most of operations can use Verb + Noun:
 <li>p: paste</li>
 </ol>
 <p>
-Aything you just deleted(cut), yanked can be pasted.
+Anything you just deleted(cut), yanked can be pasted.
 </p>
 <ul class="org-ul">
 <li>p: paste after</li>
@@ -471,8 +471,8 @@ Aything you just deleted(cut), yanked can be pasted.
 </div>
 </div>
 
-<div id="outline-container-orged38f4a" class="outline-3">
-<h3 id="orged38f4a"><span class="section-number-3">3.2</span> Reddit time</h3>
+<div id="outline-container-org8ead480" class="outline-3">
+<h3 id="org8ead480"><span class="section-number-3">3.2</span> Reddit time</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 Install the vimum extension 
@@ -485,16 +485,16 @@ Install the vimum extension
 </div>
 
 
-<div id="outline-container-orgb57f220" class="outline-2">
-<h2 id="orgb57f220"><span class="section-number-2">4</span> Insert text</h2>
+<div id="outline-container-orgedd9456" class="outline-2">
+<h2 id="orgedd9456"><span class="section-number-2">4</span> Insert text</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Insert mode: you start to type character.
 Key ESC is used to change between normal mode and insert mode
 </p>
 </div>
-<div id="outline-container-orgd56a241" class="outline-3">
-<h3 id="orgd56a241"><span class="section-number-3">4.1</span> Insert in next/above line</h3>
+<div id="outline-container-org0597848" class="outline-3">
+<h3 id="org0597848"><span class="section-number-3">4.1</span> Insert in next/above line</h3>
 <div class="outline-text-3" id="text-4-1">
 <ol class="org-ol">
 <li>o: insert in the next line</li>
@@ -502,8 +502,8 @@ Key ESC is used to change between normal mode and insert mode
 </ol>
 </div>
 </div>
-<div id="outline-container-org61d28a6" class="outline-3">
-<h3 id="org61d28a6"><span class="section-number-3">4.2</span> Backward insert</h3>
+<div id="outline-container-org018480f" class="outline-3">
+<h3 id="org018480f"><span class="section-number-3">4.2</span> Backward insert</h3>
 <div class="outline-text-3" id="text-4-2">
 <ol class="org-ol">
 <li>i: insert before the current character</li>
@@ -512,8 +512,8 @@ Key ESC is used to change between normal mode and insert mode
 </div>
 </div>
 
-<div id="outline-container-orgfaefbeb" class="outline-3">
-<h3 id="orgfaefbeb"><span class="section-number-3">4.3</span> Forward insert</h3>
+<div id="outline-container-org5af146b" class="outline-3">
+<h3 id="org5af146b"><span class="section-number-3">4.3</span> Forward insert</h3>
 <div class="outline-text-3" id="text-4-3">
 <ol class="org-ol">
 <li>a: append to the right of the current character</li>
@@ -522,8 +522,8 @@ Key ESC is used to change between normal mode and insert mode
 </div>
 </div>
 
-<div id="outline-container-orgf08dcb4" class="outline-3">
-<h3 id="orgf08dcb4"><span class="section-number-3">4.4</span> repeat typing</h3>
+<div id="outline-container-orgd373f61" class="outline-3">
+<h3 id="orgd373f61"><span class="section-number-3">4.4</span> repeat typing</h3>
 <div class="outline-text-3" id="text-4-4">
 <ol class="org-ol">
 <li>try 80i# and press escape</li>
@@ -531,8 +531,8 @@ Key ESC is used to change between normal mode and insert mode
 </div>
 </div>
 
-<div id="outline-container-org97739cd" class="outline-3">
-<h3 id="org97739cd"><span class="section-number-3">4.5</span> replace text</h3>
+<div id="outline-container-org06c9f1e" class="outline-3">
+<h3 id="org06c9f1e"><span class="section-number-3">4.5</span> replace text</h3>
 <div class="outline-text-3" id="text-4-5">
 <ol class="org-ol">
 <li>r: replace a character in normal mode</li>
@@ -542,8 +542,8 @@ Key ESC is used to change between normal mode and insert mode
 </div>
 
 
-<div id="outline-container-org2036aa2" class="outline-2">
-<h2 id="org2036aa2"><span class="section-number-2">5</span> Visual mode</h2>
+<div id="outline-container-org63e3628" class="outline-2">
+<h2 id="org63e3628"><span class="section-number-2">5</span> Visual mode</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Select text in highlight mode and operate
@@ -557,20 +557,20 @@ Select text in highlight mode and operate
 </div>
 </div>
 
-<div id="outline-container-orgd7adadc" class="outline-2">
-<h2 id="orgd7adadc"><span class="section-number-2">6</span> Substitue</h2>
+<div id="outline-container-org4bc7eb5" class="outline-2">
+<h2 id="org4bc7eb5"><span class="section-number-2">6</span> Substitute</h2>
 <div class="outline-text-2" id="text-6">
 <ol class="org-ol">
 <li>:s/a/b/g  substitute a with b, in a line</li>
 <li>:%s/a/b/g substitute a with b, in whole document</li>
-<li>use visulal mode to select block to substitute.</li>
+<li>use visual mode to select block to substitute.</li>
 <li>:5,12s/a/b/g</li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-orgf3b67d7" class="outline-2">
-<h2 id="orgf3b67d7"><span class="section-number-2">7</span> Tricks</h2>
+<div id="outline-container-org531e53e" class="outline-2">
+<h2 id="org531e53e"><span class="section-number-2">7</span> Tricks</h2>
 <div class="outline-text-2" id="text-7">
 <ol class="org-ol">
 <li>Ctrl + j: append next line to the end of current line.</li>
@@ -583,7 +583,7 @@ Select text in highlight mode and operate
 <div id="postamble" class="status">
 <p class="date">Date: 04/04/2020</p>
 <p class="author">Author: Shuai Wang</p>
-<p class="date">Created: 2020-04-04 Sat 20:59</p>
+<p class="date">Created: 2020-04-04 Sat 21:05</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
