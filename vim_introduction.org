@@ -41,11 +41,11 @@ data = {
 4. down:  j
 
 ** By word move
-1. w: foward by a word  
+1. w: forward by a word  
 2. b: back by a word
 3. e: to the end of the next word
 
-** Line Navigation: exetreme point
+** Line Navigation: extreme point
 1. 0:  beginning of the line
 2. $:  end of the line
 3. gg: 1st line of the file
@@ -62,7 +62,7 @@ data = {
 *** in-line 
 1. fc/Fc: find the next/previous letter c in the current line.
 Not the c you want?
-Repeat the procecure by using ;
+Repeat the procedure by using ;
 
 *** global search 
 1. /san find the next word san in the document
@@ -72,7 +72,7 @@ Go to the next/previous one by hitting enter followed by n or N
 * Cut, copy and paste 
 Most of operations can use Verb + Noun:
 + d for delete, w for word, combine to be "delete word"
-+ numer n can be added in front of the perations: 3dw.
++ number n can be added in front of the operations: 3dw.
 ** delete character, word, and line
 1. x: delete a character. 3x, 100x
 2. d: delete 
@@ -89,7 +89,7 @@ Most of operations can use Verb + Noun:
    + yt(): yank until character. yt8, yt} 
    + yi(): yank within character. yi', yi), yi}
 4. p: paste
-Aything you just deleted(cut), yanked can be pasted.
+Anything you just deleted(cut), yanked can be pasted.
    + p: paste after 
    + P: paste before 
 
@@ -129,10 +129,10 @@ Select text in highlight mode and operate
 2. V: highlight a line. 
 3. Ctrl + v: highlight a block. Ctrl+v+Shift+i+#
 
-* Substitue 
+* Substitute 
 1. :s/a/b/g  substitute a with b, in a line
 2. :%s/a/b/g substitute a with b, in whole document
-3. use visulal mode to select block to substitute.
+3. use visual mode to select block to substitute.
 4. :5,12s/a/b/g
 
 * Tricks
